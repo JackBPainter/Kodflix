@@ -1,23 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import TheShiningCover from './The Shining Movie Cover.jpg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={TheShiningCover} alt="Shining Movie Cover" />
         <p>
-          <h1>Welcome to Kodflix!</h1>
+          <h1>Welcome to Jacks Kodlfix!</h1>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
