@@ -1,5 +1,4 @@
 import React from 'react';
-import TheShiningCover from './images/The Shining Movie Cover.jpg';
 import BlackMirrorCover from './images/Black Mirror Cover.jpg';
 import GameofThrones from './images/Game of Thrones Cover.jpg';
 import HannibalCover from './images/Hannibal Cover.jpg';
@@ -12,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={TheShiningCover} alt="The Shining Movie"/>
         <p>
           <h1>Welcome to Jacks Kodlfix!</h1>
         </p>
