@@ -23,7 +23,7 @@ img {
 }
 
 .coverNames {
-  transition: top 2s ease-in;
+  transition: top 1s ease-in;
   position: absolute;
   color: white;
   background-color: black;
