@@ -1,17 +1,17 @@
-import React from 'react';
-import Gallery from './Gallery';
-import './App.css';
+import React from "react";
+import Gallery from "./Gallery";
+import { BrowserRouter as Router, Route} from "react-router-dom";
+import Details from "./Details";
+import "./App.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          <h1>Welcome to Jacks Kodlfix!</h1>
-        </p>
-        </header>
-        <br /><br />
-        <Gallery />
-        </div>
+    <Router>
+      <div className="App">
+        <header className="App-header" />
+        <Route exact path="/" component={Gallery} />
+        <Route exact path="/Details" component={Details} />
+      </div>
+    </Router>
   );
 }
