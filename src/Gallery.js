@@ -10,7 +10,7 @@ import LouisWeirdWeekendsCover from "./images/Louis Weird Weekends Cover.jpg";
 export default function Gallery(props) {
   return (
     <div>
-        <h1>Welcome to Jacks Kodlfix!</h1>
+        <h1>Welcome to Jacks Kodflix!</h1>
             <div className="wrapper">
             <TvCover tvshow="Black Mirror" image={BlackMirrorCover} />
             <TvCover tvshow="Game of Thrones" image={GameofThrones} />
