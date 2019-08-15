@@ -7,18 +7,21 @@ img {
   height: 100%;
 }
 
+.WelcomeMsg {
+  text-align: center;
+}
+
 .wrapper {
-  display: flex;
+  display: grid;
   position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
 
 .item {
-  flex: 1;
   position: relative;
   overflow: hidden;
-
+  width: 100%;
+  height: 100%;
 }
 
 .coverNames {
@@ -31,13 +34,7 @@ img {
   top: -120px;
 }
 
-.item:hover .coverNames{
+.item:hover .coverNames {
   display: block;
   top: 0px;
-}
-
-@media only screen and (max-width: 640px) {
-  .wrapper {
-    flex-direction: column;
-    }
 }

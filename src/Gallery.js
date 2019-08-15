@@ -10,16 +10,34 @@ import LouisWeirdWeekendsCover from "./images/Louis Weird Weekends Cover.jpg";
 export default function Gallery(props) {
   return (
     <div>
-        <h1>Welcome to Jacks Kodflix!</h1>
-            <div className="wrapper">
-            <TvCover tvshow="Black Mirror" image={BlackMirrorCover} />
-            <TvCover tvshow="Game of Thrones" image={GameofThrones} />
-            <TvCover tvshow="Hannibal" image={HannibalCover} />
-            <div className="wrapper">
-            <TvCover tvshow="Last Chance U" image={LastChanceUCover} />
-            <TvCover tvshow="Peaky Blinders" image={PeakyBlindersCover} />
-            <TvCover tvshow="Louis Weird Weekends" image={LouisWeirdWeekendsCover} />
-        </div>
+      <h1 className="WelcomeMsg">Welcome to Jacks Kodflix!</h1>
+      <div className="wrapper">
+        <TvCover
+          tvshow="Black Mirror"
+          id="black-mirror"
+          image={BlackMirrorCover}
+        />
+        <TvCover
+          tvshow="Game of Thrones"
+          id="game-of-thrones"
+          image={GameofThrones}
+        />
+        <TvCover tvshow="Hannibal" id="hannibal" image={HannibalCover} />
+        <TvCover
+          tvshow="Last Chance U"
+          id="last-chance-u"
+          image={LastChanceUCover}
+        />
+        <TvCover
+          tvshow="Peaky Blinders"
+          id="peaky-blinders"
+          image={PeakyBlindersCover}
+        />
+        <TvCover
+          tvshow="Louis Weird Weekends"
+          id="louis-weird-weekends"
+          image={LouisWeirdWeekendsCover}
+        />
       </div>
     </div>
   );
