@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import getGallery from "./get-gallery";
 
-export default function Details() {
+export default function Details(props) {
+  const [detailsText, setDetailsText] = useState();
+  const tvShowId = props.match.params.tvShowUrl;
+
+  useEffect(() => {
+    let tvShow = getGallery().find(gallery => gallery.id === tvShowId);
+    setDetailsText(tvShow.title);
+  }, [tvShowId]);
+
   return (
-    <h1>Hello, this will be the details page for each Movie & TV Show :)</h1>
+    <div>
+      <h1>{detailsText}</h1>
+      <Link to="/">Return to the Home page</Link>
+    </div>
   );
 }

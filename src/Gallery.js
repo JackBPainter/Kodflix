@@ -9,8 +9,8 @@ export default function Gallery(props) {
       <div className="wrapper">
         {getGallery().map(show => (
           <TvCover
-            key={show.tvshow}
-            tvshow={show.tvshow}
+            key={show.id}
+            title={show.title}
             id={show.id}
             image={show.image}
           />

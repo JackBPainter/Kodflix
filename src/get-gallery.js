@@ -7,11 +7,11 @@ import LouisWeirdWeekendsCover from "./images/Louis Weird Weekends Cover.jpg";
 
 export default function getGallery() {
     return [
-        { tvshow: "black mirror", id: "black-mirror", image: BlackMirrorCover },
-        { tvshow: "Game of Thrones", id: "game-of-thrones", image: GameofThronesCover },
-        { tvshow: "Hannibal", id: "hannibal", image: HannibalCover },
-        { tvshow: "Last Chance U", id: "last-chance-u", image: LastChanceUCover },
-        { tvshow: "Peaky Blinders", id: "peaky-blinders", image: PeakyBlindersCover },
-        { tvshow: "Louis Weird Weekends", id: "louis-weird-weekends", image: LouisWeirdWeekendsCover }
+        { title: "Black Mirror", id: "black-mirror", image: BlackMirrorCover },
+        { title: "Game of Thrones", id: "game-of-thrones", image: GameofThronesCover },
+        { title: "Hannibal", id: "hannibal", image: HannibalCover },
+        { title: "Last Chance U", id: "last-chance-u", image: LastChanceUCover },
+        { title: "Peaky Blinders", id: "peaky-blinders", image: PeakyBlindersCover },
+        { title: "Louis Weird Weekends", id: "louis-weird-weekends", image: LouisWeirdWeekendsCover }
     ];
 }

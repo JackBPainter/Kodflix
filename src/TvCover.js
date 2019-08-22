@@ -8,7 +8,7 @@ export default function TvCover(props) {
         <img src={props.image} alt={`${props.tvshow} logo`} />
       </Link>
       <div className="coverNames">
-        <h1>{props.tvshow}</h1>
+        <h1>{props.title}</h1>
       </div>
     </div>
   );

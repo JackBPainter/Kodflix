@@ -10,7 +10,7 @@ export default function App() {
       <div className="App">
         <header className="App-header"/>
         <Route exact path="/" component={Gallery}/>
-        <Route exact path="/:movieUrl" component={Details}/>
+        <Route exact path="/:tvShowUrl" component={Details}/>
       </div>
     </Router>
   );
