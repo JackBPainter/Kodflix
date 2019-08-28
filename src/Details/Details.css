@@ -1,0 +1,35 @@
+.details {
+  background-color: black;
+  color: white;
+  font-family: Graphique;
+  font-size: 30px;
+}
+
+* {
+  overflow: hidden;
+}
+
+.details-container {
+  display: flex;
+}
+
+.details .details-container .image,
+.details .details-container .text {
+  padding: 70px;
+}
+
+.details .details-container .image {
+  width: 80%;
+  height: 80%;
+}
+
+@media only screen and (max-width: 640px) {
+  .details-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .details .details-container .image, 
+  .details .details-container .text {
+    padding: 40px;
+  }
+}
