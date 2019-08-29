@@ -22,7 +22,7 @@ export default function Details(props) {
           <p className="text">{tvShowValue.synopsis}</p>
           <img className="image"src={tvShowValue.image} alt={`${tvShowValue.title} logo`} />
         </div>
-        <Link to="/">Return to Home Page</Link>
+        <Link className="Home-Page-Link" to="/">Return to Home Page</Link>
       </div>
     );
   }

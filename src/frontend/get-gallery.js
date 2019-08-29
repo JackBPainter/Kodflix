@@ -43,7 +43,7 @@ export default function getGallery() {
         "A gangster family epic set in 1919 Birmingham, England; centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby."
     },
     {
-      title: "Louis Weird Weekends",
+      title: "Louis Theroux Weird Weekends",
       id: "louis-weird-weekends",
       image: LouisWeirdWeekendsCover,
       synopsis:

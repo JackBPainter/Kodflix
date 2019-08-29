@@ -5,10 +5,6 @@
   font-size: 30px;
 }
 
-* {
-  overflow: hidden;
-}
-
 .details-container {
   display: flex;
 }
@@ -21,6 +17,10 @@
 .details .details-container .image {
   width: 80%;
   height: 80%;
+}
+
+.Home-Page-Link {
+  color: white;
 }
 
 @media only screen and (max-width: 640px) {

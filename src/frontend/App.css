@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 .App {
   text-align: center;
 }
@@ -11,9 +20,11 @@ img {
   text-align: center;
   color: rgb(178,34,34);
   font-family: Graphique;
+
 }
 
 .wrapper {
+  background-color: black;
   display: grid;
   position: relative;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
