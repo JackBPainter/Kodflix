@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TvCover from "./TvCover";
 import getGallery from "./get-gallery";
 
-export default function Gallery(props) {
+export default function Gallery() {
+  const [data, setData] = useState({id: '', title:'', image: ''})
+
+  useEffect(() => {
+    fetch('/rest/tvShows')
+      .then(response => response.json())
+      .then(data => setData(data))
+  }, []);
+  
   return (
     <div>
       <h1 className="WelcomeMsg">WELCOME TO JACKS' KODFLIX!</h1>
