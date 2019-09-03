@@ -3,20 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
+
   "dependencies": {
     "express": "^4.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "npm-run-all": "^4.1.5"
+
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start-frontend": "react-scripts start",
     "start-backend": "node src/backend/app.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-all": "npm-run-all -p start start-backend"
+    "start-dev": "npm-run-all -p build start-backend"
   },
   "eslintConfig": {
     "extends": "react-app"
