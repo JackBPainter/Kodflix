@@ -2,10 +2,10 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const port = process.env.PORT || 3001;
-const getGallery = require("./tvShows.js");
+const TvShows = require("./TvShows.js");
 
-/*app.get('/', (req, res) => res.send('Please enter the correct URL (/localhost3001/rest/tvShows'));*/
-app.get("/rest/tvShows", (req, res) => res.send(getGallery()));
+app.get('/', (req, res) => res.send('Please enter the correct URL (/localhost3001/rest/tvShows'));
+app.get("/rest/tvShows", (req, res) => res.send(TvShows()));
 app.use(express.static(path.join(__dirname, "../../build")));
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "../../build/", "index.html"));

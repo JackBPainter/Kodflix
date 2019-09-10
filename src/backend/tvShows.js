@@ -1,4 +1,4 @@
-function getGallery() {
+function TvShows() {
     return [
       {
         title: "Black Mirror",
@@ -38,4 +38,4 @@ function getGallery() {
       }
     ];
   }
-module.exports = getGallery;
+module.exports = TvShows;

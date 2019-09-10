@@ -1,9 +1,9 @@
-import BlackMirrorCover from "./images/Black Mirror Cover.jpg";
-import GameofThronesCover from "./images/Game of Thrones Cover.jpg";
-import HannibalCover from "./images/Hannibal Cover.jpg";
-import LastChanceUCover from "./images/Last Chance U Cover.jpg";
-import PeakyBlindersCover from "./images/Peaky Blinders Cover.jpg";
-import LouisWeirdWeekendsCover from "./images/Louis Weird Weekends Cover.jpg";
+import BlackMirrorCover from "./images/black-mirror.jpg";
+import GameofThronesCover from "./images/game-of-thrones.jpg";
+import HannibalCover from "./images/hannibal.jpg";
+import LastChanceUCover from "./images/last-chance-u.jpg";
+import PeakyBlindersCover from "./images/peaky-blinders.jpg";
+import LouisWeirdWeekendsCover from "./images/louis-weird-weekends.jpg";
 
 export default function getGallery() {
   return [
