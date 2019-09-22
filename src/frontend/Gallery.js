@@ -12,8 +12,10 @@ export default function Gallery() {
 
   if (data) {
     return (
-      <div>
-        <h1 className="WelcomeMsg">WELCOME TO JACKS' KODFLIX!</h1>
+      <div className="Gallery">
+        <div className="Gallery-Header">
+        <h1 className="WelcomeMsg">Welcome to Kodflix!</h1>
+        </div>
         <div className="wrapper">
           {data.map(show => (
             <TvCover key={show.id} title={show.title} id={show.id} />

@@ -10,7 +10,7 @@ export default function Details(props) {
   useEffect(() => {
     fetch("/rest/tvShows")
       .then(response => response.json())
-      .then(show => setShow(show.find(gallery => gallery.id === tvShowId)))
+      .then(show => setShow(show.find(gallery => gallery.id === tvShowId)));
   }, [tvShowId]);
 
   if (show === undefined) {
@@ -18,14 +18,20 @@ export default function Details(props) {
   } else if (show.id) {
     return (
       <div className="details">
-        <h1 className="details.header">{show.title}</h1>
         <div className="details-container">
-          <p className="text">{show.synopsis}</p>
-          <img className="image"src={require(`../images/${show.id}.jpg`)} alt={`${show.title} logo`} />
+        <h1 className="details-header">{show.title}</h1>
+        <br />
+        <br />
+        <div className="details-info">
+          <p className="details-text">{show.synopsis}</p>
+          <img className="image" src={require(`../images/${show.id}.jpg`)} alt={`${show.title} logo`} />
         </div>
-        <Link className="Home-Page-Link" to="/">Return to Home Page</Link>
+        <Link className="Home-Page-Link" to="/">
+          Return to Home Page
+        </Link>
+      </div>
       </div>
     );
   }
-  return <div></div>
+  return <div></div>;
 }

@@ -1,4 +1,4 @@
-import BlackMirrorCover from "./images/black-mirror.jpg";
+/*import BlackMirrorCover from "./images/black-mirror.jpg";
 import GameofThronesCover from "./images/game-of-thrones.jpg";
 import HannibalCover from "./images/hannibal.jpg";
 import LastChanceUCover from "./images/last-chance-u.jpg";
@@ -43,11 +43,11 @@ export default function getGallery() {
         "A gangster family epic set in 1919 Birmingham, England; centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby."
     },
     {
-      title: "Louis Theroux Weird Weekends",
-      id: "louis-weird-weekends",
+      title: "Louis Weird Weekends",
+      id: "weird-weekends",
       image: LouisWeirdWeekendsCover,
       synopsis:
         "Louis Theroux documents some of the US's most bizarre happenings, events and rituals, by getting involved himself."
     }
   ];
-}
+}*/

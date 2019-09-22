@@ -9,6 +9,8 @@
 
 .App {
   text-align: center;
+  min-height: 100vh;
+  background: black;
 }
 
 img {
@@ -16,18 +18,29 @@ img {
   height: 100%;
 }
 
+.Gallery {
+  background-image: url("./images/Background.jpg")
+}
+
+.Gallery-Header {
+  background: white;
+  opacity: 0.9;
+}
+
 .WelcomeMsg {
   text-align: center;
-  color: rgb(178,34,34);
+  color: red;
   font-family: Graphique;
-
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 2px black;
+  padding: 10px;
 }
 
 .wrapper {
   background-color: black;
   display: grid;
   position: relative;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 }
 
 .item {
