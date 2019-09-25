@@ -14,7 +14,7 @@ export default function Gallery() {
     return (
       <div className="Gallery">
         <div className="Gallery-Header">
-        <h1 className="WelcomeMsg">Welcome to kodflix!</h1>
+        <h1 className="WelcomeMsg">Welcome to Kodflix!</h1>
         </div>
         <div className="wrapper">
           {data.map(show => (
