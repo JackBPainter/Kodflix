@@ -16,6 +16,6 @@ export default function App() {
           <Route exact path="/:tvShowUrl" component={Details} />
         </Switch>
       </div>
-    </Router>
+    </Router> 
   );
 }
