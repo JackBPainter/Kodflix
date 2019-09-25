@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const port = process.env.PORT || 3001;
-const TvShows = require("./TvShows.js");
+const TvShows = require("./tvShows.js");
 
 app.get('/', (req, res) => res.send('Please enter the correct URL (/localhost3001/rest/tvShows'));
 app.get("/rest/tvShows", (req, res) => res.send(TvShows()));

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, Redirect } from "react-router-dom";
-//import TvShows from "../tvShows";
 import "./Details.css";
 
 export default function Details(props) {
